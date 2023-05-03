@@ -154,6 +154,9 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backButtonTapped" destination="12d-fX-Cla" eventType="touchUpInside" id="hic-aj-wtS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Твое имя и имя партнера" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yup-NE-3WD">
                                 <rect key="frame" x="95.666666666666686" y="237" width="202" height="21"/>
@@ -182,9 +185,11 @@
                         <outlet property="namesLabel" destination="yup-NE-3WD" id="zR7-XU-IZy"/>
                         <outlet property="progressView" destination="tf2-oO-4Hi" id="Wib-UE-vB7"/>
                         <outlet property="resultLabel" destination="8g1-Nu-fbQ" id="wuI-hj-aX6"/>
+                        <segue destination="Rn8-pq-48x" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToFirstVCWithSegue:" id="Vex-Jn-8WL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2j-rI-TEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Rn8-pq-48x" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-756" y="-37"/>
         </scene>

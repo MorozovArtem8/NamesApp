@@ -30,6 +30,14 @@ class FirstViewController: UIViewController {
         performSegue(withIdentifier: "goToResult", sender: nil)
     }
     
+    @IBAction func unwindSegueToFirstVC(segue: UIStoryboardSegue){ // ВОЗВРАТ НА ПРЕДЫДЩУИЙ ЭКРАН  NamesApp. Unwind
+        guard segue.identifier == "unwindSegue" else {return}
+        
+        yourNameTF.text = ""
+        partnerNameTF.text = ""
+        
+    }
+    
 }
 extension FirstViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
